@@ -17,7 +17,7 @@ int main()
 
     // // En esta parte se crea el objeto mencionando la clase y después el objeto
     Bebida AguaLimon("Agua de limon",2,15.50);
-    std::cout << AguaLimon.get_nombrel() << " su precio es " << AguaLimon.get_precio() << std::endl;
+    std::cout << AguaLimon.get_nombre() << " su precio es " << AguaLimon.get_precio() << std::endl;
     	      
     			
 
@@ -29,9 +29,12 @@ int main()
 	// En esta parte se crea el objeto mencionando la clase y después el objeto
     Ordenes Cuenta(20,33.50);
     
-    	      
+    Provedor PollosJuanito("Pollo","PollosJuanito",12.00); //creamos un objeto del provedor
+	std::cout<< PollosJuanito.get_empresa()<<"vende"<<PollosJuanito.get_nombre()<<"a "<<PollosJuanito.get_precio() <<std::endl;	      
     			
-
+	PollosJuanito.precioAlimentos(20.00,"Pollo");// funcion del provedor
+	std::cout<<std::endl;
+	
     // En esta función se meciona cuantas ordenes en el dia fueron y el costo de cada una suponiendo que se compra una agua de limon y un pollo
     Cuenta.Nordeneseneldia(20,33.00);
                  
