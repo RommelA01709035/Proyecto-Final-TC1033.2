@@ -1,3 +1,6 @@
+
+
+
 #include <string>
 #include <iostream>
 
@@ -26,15 +29,15 @@ public://Metodos
     void Comprar(int, float );
 };
 
-// Metodos modificadores get y set agrupado según su atributo
+// Metodos modificadores get y set agrupado segÃºn su atributo
 std::string Comida::get_nombre() { return nombre; }			
 void Comida::set_nombre(std::string name) { nombre = name; }
 
-// Metodos modificadores get y set agrupado según su atributo
+// Metodos modificadores get y set agrupado segÃºn su atributo
 int Comida::get_pieza() { return pieza; }
 void Comida::set_pieza(int pie) { pieza = pie; }
 
-// Metodos modificadores get y set agrupado según su atributo
+// Metodos modificadores get y set agrupado segÃºn su atributo
 float Comida::get_precio() { return precio; }
 void Comida::set_precio(float pre) { precio = pre; }
 
@@ -43,6 +46,7 @@ void Comida::set_precio(float pre) { precio = pre; }
 void Comida::Comprar(int pieza,float precio)
 {
     precio=precio * pieza;
+    std::cout<<""<<pieza<< "es el numero de piezas que compro "<<" y su precio total es de:"<<precio;
 }
 
 class Bebida //clase
@@ -58,72 +62,78 @@ public://metodos
     Bebida(std::string namel, int li, float pre) ://Constructor con variables predefinidas
         nombrel(namel), litros(li), precio(pre) { };
         
-    // Metodos modificadores get y set agrupado según su atributo
+    // Metodos modificadores get y set agrupado segÃºn su atributo
     void set_nombrel(std::string );
     std::string get_nombrel();
 
-    // Metodos modificadores get y set agrupado según su atributo
+    // Metodos modificadores get y set agrupado segÃºn su atributo
     void set_litros(int );
     int get_litros();
 
-    // Metodos modificadores get y set agrupado según su atributo
+    // Metodos modificadores get y set agrupado segÃºn su atributo
     void set_precio(float );
     float get_precio();
 
     void ComprarAgua(int, float );
 };
 
-// Metodos modificadores get y set agrupado según su atributo
+// Metodos modificadores get y set agrupado segÃºn su atributo
 std::string Bebida::get_nombrel() { return nombrel; }
 void Bebida::set_nombrel(std::string namel) { nombrel = namel; }
 
-// Metodos modificadores get y set agrupado según su atributo
+// Metodos modificadores get y set agrupado segÃºn su atributo
 int Bebida::get_litros() { return litros; }
 void Bebida::set_litros(int li) { litros = li; }
 
-// Metodos modificadores get y set agrupado según su atributo
+// Metodos modificadores get y set agrupado segÃºn su atributo
 float Bebida::get_precio() { return precio; }
 void Bebida::set_precio(float pre) { precio = pre; }
 
 void Bebida::ComprarAgua(int litros,float precio)
 {
     precio=precio * litros;
+    
+    std::cout<< litros << "Compro esa cantidad de litros "<<" y su precio total es:"<<precio;
+    
 }
 
 class Ordenes
 {
 private:
     int Nordenes;
-    float precioO;
+    float precio;
 
 public:
     
-    Ordenes() :  Nordenes(0), precioO(0.0) { }; // constructor default
-    Ordenes(int NO, float preO) ://Constructor con variables predefinidas
-        Nordenes(NO),precioO(preO) { };
+    Ordenes() :  Nordenes(0), precio(0.0) { }; // constructor default
+    Ordenes(int NO, float pre) ://Constructor con variables predefinidas
+        Nordenes(NO),precio(pre) { };
 
-    // Metodos modificadores get y set agrupado según su atributo
+    // Metodos modificadores get y set agrupado segÃºn su atributo
     void set_Nordenes(int );
     int get_Nordenes();
 
-    // Metodos modificadores get y set agrupado según su atributo
-    void set_precioO(float );
-    float get_precioO();
+    // Metodos modificadores get y set agrupado segÃºn su atributo
+    void set_precio(float );
+    float get_precio();
 
-    void Nordeneseneldia(int, float ); //Funcion para ver las ordenes del día
+    void Nordeneseneldia(int, float ); //Funcion para ver las ordenes del dÃ­a
 };
 
-// Metodos modificadores get y set agrupado según su atributo
+// Metodos modificadores get y set agrupado segÃºn su atributo
 int Ordenes::get_Nordenes() { return Nordenes; }
 void Ordenes::set_Nordenes(int NO) { Nordenes = NO; }
 
-// Metodos modificadores get y set agrupado según su atributo
-float Ordenes::get_precioO() { return precioO; }
-void Ordenes::set_precioO(float preO) { precioO = preO; }
+// Metodos modificadores get y set agrupado segÃºn su atributo
+float Ordenes::get_precio() { return precio; }
+void Ordenes::set_precio(float pre) { precio = pre; }
+
+
 
 //Funcion que muestras las ordenes en el dia
-void Ordenes::Nordeneseneldia(int nordenes,float precioO)//Funcion para ver las ordenes del día
+void Ordenes::Nordeneseneldia(int nordenes,float precio)//Funcion para ver las ordenes del dÃ­a
 {
-    precioO=nordenes * precioO;
+	precio = precio * nordenes;
+	std::cout<<"";
+    std::cout<<""<<nordenes<< "es el numero de ordenes hoy"<<" y su precio total es de:"<<precio;
 }
-
