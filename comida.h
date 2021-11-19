@@ -1,6 +1,8 @@
 
 
 
+
+
 #include <string>
 #include <iostream>
 
@@ -52,19 +54,19 @@ void Comida::Comprar(int pieza,float precio)
 class Bebida //clase
 {
 private://atributos
-    std::string nombrel;
+    std::string nombre;
     int litros;
     float precio;
 
 public://metodos
     
-    Bebida() :  nombrel(""), litros(0), precio(0.0) { }; // constructor default
-    Bebida(std::string namel, int li, float pre) ://Constructor con variables predefinidas
-        nombrel(namel), litros(li), precio(pre) { };
+    Bebida() :  nombre(""), litros(0), precio(0.0) { }; // constructor default
+    Bebida(std::string name, int li, float pre) ://Constructor con variables predefinidas
+        nombre(name), litros(li), precio(pre) { };
         
     // Metodos modificadores get y set agrupado según su atributo
-    void set_nombrel(std::string );
-    std::string get_nombrel();
+    void set_nombre(std::string );
+    std::string get_nombre();
 
     // Metodos modificadores get y set agrupado según su atributo
     void set_litros(int );
@@ -78,8 +80,8 @@ public://metodos
 };
 
 // Metodos modificadores get y set agrupado según su atributo
-std::string Bebida::get_nombrel() { return nombrel; }
-void Bebida::set_nombrel(std::string namel) { nombrel = namel; }
+std::string Bebida::get_nombre() { return nombre; }
+void Bebida::set_nombre(std::string name) { nombre = name; }
 
 // Metodos modificadores get y set agrupado según su atributo
 int Bebida::get_litros() { return litros; }
@@ -127,6 +129,53 @@ void Ordenes::set_Nordenes(int NO) { Nordenes = NO; }
 // Metodos modificadores get y set agrupado según su atributo
 float Ordenes::get_precio() { return precio; }
 void Ordenes::set_precio(float pre) { precio = pre; }
+
+
+class Provedor //clase
+{
+private://atributos
+    std::string nombre;
+    std::string empresa;
+    float precio;
+    
+
+public://metodos
+    
+    Provedor() :  nombre(""), empresa(""), precio(0.0) { }; // constructor default
+    Provedor(std::string name, std::string emp, float pre) ://Constructor con variables predefinidas
+        nombre(name),  empresa(emp), precio(pre) { };
+        
+    // Metodos modificadores get y set agrupado según su atributo
+    void set_nombre(std::string );
+    std::string get_nombre();
+
+    // Metodos modificadores get y set agrupado según su atributo
+    void set_empresa(std::string );
+    std::string get_empresa();
+
+    // Metodos modificadores get y set agrupado según su atributo
+    void set_precio(float );
+    float get_precio();
+
+    void precioAlimentos(float, std::string );
+};
+
+// Metodos modificadores get y set agrupado según su atributo
+std::string Provedor::get_nombre() { return nombre; }
+void Provedor::set_nombre(std::string name) { nombre = name; }
+
+// Metodos modificadores get y set agrupado según su atributo
+std::string Provedor::get_empresa() { return empresa; }
+void Provedor::set_empresa(std::string emp) { empresa = emp; }
+
+// Metodos modificadores get y set agrupado según su atributo
+float Provedor::get_precio() { return precio; }
+void Provedor::set_precio(float pre) { precio = pre; }
+
+void Provedor::precioAlimentos(float precio, std::string nombre){ //funcion que muestra el valor de un alimento
+    std::cout<< nombre<< " "<<" su precio es:"<<precio;
+    
+}
 
 
 
