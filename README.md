@@ -24,7 +24,7 @@ En este segundo avance he corregido mis funciones y ahora lo que hacen es calcul
 
 -Se recreo el codigo aplicando solamente herencia porque no me salio agregar composición o agregación.
 
--La herencia inicia desde la clase padre "Provedor" que hereda sus atributos (marca, producto y precio) a las clases hijas que son comida y agua siendo los productos que ellos venden a la clientela en generar o a demás tiendas.
+-La herencia inicia desde la clase padre "Provedor" que hereda sus atributos (marca, producto y precio) a las clases hijas que son "Comida" y "Agua" siendo los productos que ellos venden a la clientela en generar o a demás tiendas.
 
 - Al recrear el codigo se cambiaron las variables como:
 
