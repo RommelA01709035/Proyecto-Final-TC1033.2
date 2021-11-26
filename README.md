@@ -45,7 +45,7 @@ std::string producto = pro
 float precio = pre
 
 
--El funcionamiento de este programa imprime desde el main las caracteristicas de los productos de una manera vertical iniciando por la marca.
+-El funcionamiento de este programa imprime desde el main las caracteristicas de los productos de una manera vertical iniciando por la marca. No tienes que ingresar alguna entrada.
 
 - Las clases ya no solo estan agrupadas en una sola (que anteriormente estaban agrupadas en "comida.h") ahora estan separadas en documento ".h"
 
