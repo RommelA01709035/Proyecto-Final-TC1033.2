@@ -9,6 +9,7 @@ class Agua/*clase hija*/: public Provedor/*clase padre*/{//herencia
 		float litros;
 	
 	public: //metodos
+		Agua();
 		Agua (std::string mar, std::string pro,float lit):Provedor(mar,pro,10.00){litros = lit;}//constructor
 		float getLitros(){return litros; }//getters
 };
