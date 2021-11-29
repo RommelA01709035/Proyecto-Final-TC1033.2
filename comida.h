@@ -9,6 +9,8 @@ class Comida/*clase hija*/: public Provedor/*clase padre*/{
 		int piezas; 
 	
 	public: //metodos
+		Comida(){}
+		
 		Comida (std::string mar, std::string pro, int pie): Provedor(mar,pro,15)
 		{piezas = pie;}
 	
