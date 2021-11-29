@@ -4,6 +4,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include<string.h>
+
  
 
 class Provedor/*clase*/{
@@ -14,6 +15,7 @@ class Provedor/*clase*/{
 		 
 	
 	public: //metodos
+		Provedor(){}
 		Provedor(std::string mar, std::string pro, float pre){
 			marca = mar; 
 			producto = pro;  
@@ -27,6 +29,7 @@ class Provedor/*clase*/{
 		void setPrecio (int pre){precio = pre;}
 		void setMarca (std::string mar){marca = mar;}
 		void setProducto (std::string pro){producto = pro;}
+		
 };
 
 
