@@ -2,15 +2,15 @@
  
 #include<string> 
 
-#include "comida.h"
+#include "Comida.h"
 #include "Provedor.h"
 #include "Agua.h"
-#include "Pedidos.h"
+#include "Pedido.h"
 
 Comida listaProv [100];
 int numid = 0;
 
-Pedidos listaPedidos[100];
+Pedido listaPedidos[100];
 int numped =0;
 
 void agregar_provedorde_comida();
@@ -67,15 +67,15 @@ void agregar_provedorde_comida(){          //funcion para agregar datos del obje
 }
 
 void Crear_pedido(){
-	Pedidos Pollo ("01",25,listaProv[0]); // datos para crear un pedido usando un arreglo
+	Pedido Pollo ("01",25,listaProv[0]); // datos para crear un pedido usando un arreglo
 	listaPedidos[numped] = Pollo;
 	numped++;
 	
-	Pedidos torta ("02",35,listaProv[1]);
+	Pedido torta ("02",35,listaProv[1]);
 	listaPedidos[numped] = torta;
 	numped++;
 	
-	Pedidos carne ("03",80,listaProv[2]);
+	Pedido carne ("03",80,listaProv[2]);
 	listaPedidos[numped] = carne;
 	numped++;
 }
