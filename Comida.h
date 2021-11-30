@@ -1,5 +1,5 @@
-#ifndef comida_H
-#define comida_H
+#ifndef Comida_H
+#define Comida_H
 
 #include "Provedor.h"
 
