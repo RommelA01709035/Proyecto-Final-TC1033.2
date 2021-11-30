@@ -1,5 +1,5 @@
-#ifndef Pedidos_H
-#define Pedidos_H
+#ifndef Pedido_H
+#define Pedido_H
 #include "Comida.h"
 #include "Provedor.h"
 #include<iostream>
@@ -7,7 +7,7 @@
 #include<string.h>
  
 
-class Pedidos/*clase*/{
+class Pedido/*clase*/{
 	private://atributos  
 		int cantidad;
 		std::string id; 
@@ -15,8 +15,8 @@ class Pedidos/*clase*/{
 		 
 	
 	public: //metodos
-		Pedidos(){}
-		Pedidos(std::string ID,int cant, Comida PROVEDOR){
+		Pedido(){}
+		Pedido(std::string ID,int cant, Comida PROVEDOR){
 			cantidad = cant; 
 			id = ID;  
 			prov = PROVEDOR;  			 
