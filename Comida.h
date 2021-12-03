@@ -1,18 +1,26 @@
-#ifndef Comida_H
-#define Comida_H
+/*-Proyecto: Registro de pedidos
+-Rommel Pacheco Hernández 
+-A01709035
+02/12/2021
+*/
 
-#include "Provedor.h"
+#ifndef Comida_H//se utiliza mucho la clase asi que mejor
+#define Comida_H//la definimos
 
-class Comida/*clase hija*/: public Provedor/*clase padre*/{
+#include "Provedor.h"//incluimos clase abstracta
+
+class Comida/*clase hija*/: public Provedor/*clase abstracta*/{
 	
-	private: //atributos
+	private: //declaro atributo(s)
 		int piezas; 
 	
-	public: //metodos
-		Comida(){}
+	public: //declaro metodosmetodos
+		Comida(){} // constructor default con listas
 		
 		Comida (std::string mar, std::string pro, int pie): Provedor(mar,pro,15)
 		{piezas = pie;}
+		//constructor asimilando variables heredadas
+		
 	
 		int getPiezas(){return piezas;}
 };
