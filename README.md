@@ -1,7 +1,7 @@
-# Proyecto-Final-TC1033.2
+# Proyecto-Final-TC1033.2 - Correciones
 Este es mi proyecto final para la materia "Pensamiento computacional orientada a objetos".
 
-Contexto: En una cocina local tiene un desorden en las ventas asi que la función de este algoritmo es  presentar un orden en las ventas dandonos las piezas de comida, litros de bebida y compras que se hacen en el día. El Proyecto esta programado solamente para presentar información y se usa solamente dandole ejecutar y posteriormente Enter .
+
 Variables y la explicación de su nombre: Las variables  están relacionadas unicamente en el nombre tales como nombre la cual esta ubicada en la clase de comida, posteriormente veremos nombrel la cual hace referencia al nombre nombre del liquido ya que esta ubicada en los atributos de la clase bebida. Siendo esta la relacion de las variables y su nombre a continuación diré el nombre de las variables para que tengan más sentido:
 
 nombre= name siendo este la variable para usar en get y set y name porque es nombre en inglés y no sea un nombre más alejado a lo que es.
@@ -49,3 +49,32 @@ float precio = pre
 
 - Las clases ya no solo estan agrupadas en una sola (que anteriormente estaban agrupadas en "comida.h") ahora estan separadas en documento ".h"
 
+Correcciones finales      02/12/2021
+
+-Primeramente añadí el concepto de agregación agregando la clase pedido a provedor.
+
+
+- Añadí interacción con el usuario dandole la libertad para decidir si quiere imprimirel registro almacenado.
+
+
+-Añadí listas pata tener un mejor control en mis variables.
+
+-Cicle el programa.
+
+
+
+# Contexto.
+En una cocina local, tiene un desorden en las ventas asi que la función de este algoritmo es  presentar un orden en los pedidos que hace la tienda hacia los provedores de comida y bebida, imprimiendo el registro que se lleva de esto (caracteristicas del prducto, de los pedidos o de los provedores frecuentes).
+
+# Funcionalidad.
+
+El programa solo permite escoger si quieres mostrar el registro con la opción de "si" que se ejecuta con un "1" o para salir que se ejecuta con cualquier número
+
+
+# Consideraciones.
+
+-El programa esta hecho con dev C++ y se ha usado su compilador desde el inicio, pero ya tuvimos revisión del programa el martes y ya le corrió al profesor asi que no debería a ver ningún inconveniente.
+
+-Al momento de compilar debe compilar el unico archivo .cpp que se llama "Comedor.cpp" .
+
+-Además del archivo cpp, debe descargar los otros archivos .h que son las clases de mí proyecto que son: "Agua.h", "Comida.h", "Pedido.h" y "Provedor.h".
